@@ -1,0 +1,9 @@
+name: Toms3Announcer
+version: '1.0-SNAPSHOT'
+main: io.github.Cherryh4ck.toms3Announcer.Toms3Announcer
+api-version: '1.21'
+commands:
+  announce:
+    description: Announcer command (Console only)
+    usage: /announce [message] [times]
+    permission: toms3announcer.use
