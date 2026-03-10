@@ -7,7 +7,6 @@ import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 
 import net.kyori.adventure.text.minimessage.MiniMessage
-import net.kyori.adventure.text.Component
 
 class Announcer(private val plugin: Toms3Announcer) : CommandExecutor {
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
@@ -31,7 +30,6 @@ class Announcer(private val plugin: Toms3Announcer) : CommandExecutor {
 
                 if (messageContent.isEmpty()){
                     plugin.sendError("El mensaje del announcer no puede estar vacío.")
-                    return true
                 }
                 else{
                     val message = minimessage.deserialize("<yellow>[SERVER] $messageContent</yellow>")
@@ -49,6 +47,6 @@ class Announcer(private val plugin: Toms3Announcer) : CommandExecutor {
             val message = minimessage.deserialize("<red>No puedes ejecutar este comando si no eres la consola.</red>")
             sender.sendMessage(message)
         }
-        return true;
+        return true
     }
 }
