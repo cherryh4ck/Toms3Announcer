@@ -1,5 +1,5 @@
 name: Toms3Announcer
-version: '1.0-SNAPSHOT'
+version: '1.0'
 main: io.github.Cherryh4ck.toms3Announcer.Toms3Announcer
 api-version: '1.21'
 commands:
